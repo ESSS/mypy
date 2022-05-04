@@ -515,7 +515,7 @@ def mypycify(
         cflags += [
             '-O{}'.format(opt_level),
             '-g{}'.format(debug_level),
-            '-Werror', '-Wno-unused-function', '-Wno-unused-label',
+            '-Wno-unused-function', '-Wno-unused-label',
             '-Wno-unreachable-code', '-Wno-unused-variable',
             '-Wno-unused-command-line-argument', '-Wno-unknown-warning-option',
         ]
