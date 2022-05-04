@@ -95,7 +95,7 @@ def generate_stub_for_c_module(
     for line in functions:
         output.append(line)
     output = add_typing_import(output)
-    with open(target, "w") as file:
+    with open(target, 'w', encoding="UTF-8") as file:
         for line in output:
             file.write(f"{line}\n")
 
